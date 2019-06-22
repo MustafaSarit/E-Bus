@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EBusMugla</string>
+    <string-array name="from">
+        <item>Merkez</item>
+        <item>Kötekli</item>
+        <item>Yeniköy</item>
+        <item>Toki</item>
+        <item>Hastane</item>
+    </string-array>
+    <string-array name="to">
+        <item>Merkez</item>
+        <item>Kötekli</item>
+        <item>Yeniköy</item>
+        <item>Toki</item>
+        <item>Hastane</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

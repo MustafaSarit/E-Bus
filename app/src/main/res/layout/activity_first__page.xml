@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9900"
+    tools:context=".First_Page">
+
+    <Spinner
+        android:id="@+id/to_spin"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/from_spin" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="92dp"
+        android:layout_height="75dp"
+        android:background="#ff9900"
+        android:gravity="left|center"
+        android:text="FROM:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#ff9900"
+        android:gravity="left|center"
+        android:text="TO:"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/from_spin"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/from_spin"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/fragment" />
+
+    <Button
+        android:id="@+id/search_but"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="#0066ff"
+        android:fadingEdge="none"
+        android:text="Search"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/to_spin" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.mustafa.ebusmugla.Map"
+        android:layout_width="0dp"
+        android:layout_height="188dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
